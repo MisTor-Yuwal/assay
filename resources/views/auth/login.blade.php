@@ -5,14 +5,14 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card" style="background: transparent;">
-                <div class="card-header" style="color: white;">{{ __('Login') }}</div>
+                <div class="card-header login-header" style="color: white;">{{ __('Login') }}</div>
 
                 <div class="card-body login">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end" style="color: white;">{{ __('Email Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-end login-mail" style="color: white;">{{ __('Email Address') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end" style="color: white;">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-end login-password" style="color: white;">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -69,7 +69,7 @@
             </div>
         </div>
     </div>
-    <video autoplay class="login-video">
+    <video autoplay class="login-video" loop>
         <source src="{{ asset('vid/yt1s.com - Rick Astley Never Gonna Give You Up Official Music Video_1080p (online-video-cutter.com).mp4') }}" type="video/mp4">
     </video>
 </div>

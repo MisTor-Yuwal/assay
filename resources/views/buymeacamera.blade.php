@@ -36,8 +36,8 @@
     <link rel="stylesheet" href="{{ asset('style/css.css') }}">
 </head>
 <body>
-    <div class="container">
-        <div class="first-frame">
+    <div class="container camerssectioncontainer">
+        <div class="bfirst-frame">
             <div class="bnav-bar">
                 <div class="bnav">
                     <a href="/">Home</a>

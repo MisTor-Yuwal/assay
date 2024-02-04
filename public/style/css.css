@@ -39,7 +39,7 @@
     height: 5vh;
     display: flex;
     justify-content: space-between;
-    /* background: black;    */
+    /* background: black; */
     padding: 10px 50px;
     margin-left: 10px;
 }
@@ -97,7 +97,7 @@
     height: 1px;
     bottom: 0;
     left: 0;
-    background-color: #000;
+    background-color:#000;
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -151,6 +151,10 @@ img
     padding-left: 10px;
 }
 
+.invis-par,.invis-par2,.invis-par3
+{
+    display: none;
+}
 .namespan
 {
     font-size: 16px;
@@ -185,6 +189,8 @@ img
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
     /* border: 1px solid blue; */
 }
 .child2
@@ -270,6 +276,7 @@ img
 {
     width: 100%;
     height: 30vh;
+    /* background: violet; */
 }
 .innerfooter
 {
@@ -304,7 +311,7 @@ img
     width: 30%;
     margin: 4% 35%;
     height: 75vh;
-    background: #0B0B0D;
+    /* background: #0B0B0D; */
     opacity: .5;
     border-radius: 50px;
     /* border: .5px solid whitesmoke; */
@@ -323,7 +330,7 @@ img
 {
     width: 100%;
     /* margin: 0 5%; */
-    background: transparent;
+    /* background: transparent; */
     height: 5vh;
     background: black;
 }
@@ -371,13 +378,13 @@ img
 {
     transform: scaleX(1);
 }
-.buyername
+/* .buyername
 {
     color: white;
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 14px;
     margin-left: 110px;
-}
+} */
 
 .camera-list
 {
@@ -437,4 +444,201 @@ img
 {
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 16px;
+}
+
+/* ////////////////////////////////////view ports/////////////// */
+
+/* @media only screen and (width < 600px)
+{
+    .nav-bar
+{
+    background: red;
+}
+} */
+@media only screen and (width <600px)
+{
+    .nav-bar
+    {
+        height: 3vh;
+        /* background: violet; */
+    }
+    .nav
+    {
+        width: 60%;
+        height: 3vh;
+        /* background: red; */
+        margin-left: 80px;
+        padding: 0;
+
+    }
+    .nav > a
+    {
+        font-size: 8px;
+        margin-top: 8px;
+    }
+    .first-frame
+    {
+        height: 124vh;
+    }
+    .home-content
+    {
+        /* display: grid; */
+        /* grid-template-rows: 1fr 1fr; */
+        /* grid-gap: 20px; */
+        /* border: 10px solid black; */
+        width: 100%;
+        height: 120vh;
+        /* background: blue; */
+    }
+    .home-paragraph,.home-paragraphs,.home-secondparagraph,.home-secondparagraphs,
+    .name,.sname,.home-texts,.assay-img,.child2,.child3,
+    .above-footer
+    {
+        display: none;
+    }
+    .invis-par{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        width: 200%;
+        /* border: 1px solid red; */
+    }
+    .invis-child
+    {
+        margin: 20px 10px 10px;
+        /* border: 1px solid black; */
+    }
+    .invis-assay
+    {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: .5rem 1rem 1rem 0;
+        /* border-top-left-radius: 45px;
+        border-top-right-radius: 45px; */
+    }
+    .invis-moon
+    {
+        border-top-left-radius: 45px;
+        border-top-right-radius: 45px;
+    }
+    .invis-name
+    {
+        font-family: 'Allerta Stencil', sans-serif;
+        /* margin-left: 50px; */
+        border-left: 5px solid red;
+        padding-left: 10px;
+    }
+    .invis-namespan
+    {
+        font-size: 12px;
+    }
+    .invis-home-paragraph,.invis-home-secondparagraph
+    {
+        margin-top: 15px;
+        text-align: left;
+        font-size: 16px;
+        font-family: 'Allerta Stencil', sans-serif;
+    }
+    .second-content
+    {
+        height: 100vh;
+        /* background: green; */
+    }
+    .invis-par2{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        width: 209%;
+        /* height: 100vh; */
+        /* border: 1px solid red; */
+        /* background: violet; */
+    }
+    .invis-child2
+    {
+        margin: 20px 10px 10px;
+        /* border: 1px solid black; */
+    }
+    .third-content
+    {
+        height: 100vh;
+    }
+    .invis-par3{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        width: 209%;
+        height: 100vh;
+        /* border: 1px solid red; */
+        /* background: violet; */
+    }
+    .invis-child3
+    {
+        margin: 20px 10px 10px;
+        /* border: 1px solid black; */
+    }
+    .invis-condolense
+    {
+        width: 70%;
+        margin: 0 15%;
+        border-radius: 10px;
+        box-shadow: .5rem 1rem 1rem 0;
+    }
+    .pre-footer
+    {
+        /* margin-top: -10px; */
+        width: 200%;
+    }
+    .footer-par
+    {
+        padding-top: 20px;
+    }
+
+    /* /////buy//// */
+    .bnav-bar
+    {
+        height: 3vh;
+        position: relative;
+        /* background: violet; */
+    }
+    .bnav
+    {
+        width: 60%;
+        height: 3vh;
+        /* background: red; */
+        margin-left: 80px;
+        padding: 0;
+
+    }
+    .bnav > a
+    {
+        font-size: 8px;
+        margin-top: 8px;
+    }
+    .camerssectioncontainer
+    {
+        /* background: red; */
+        height: 93vh;
+    }
+    .buymaincontent
+    {
+        width: 70%;
+        margin: 15% 15%;
+    }
+    .camera-h1
+    {
+        color: rgb(255, 255, 255);
+        font-family: 'Allerta Stencil', sans-serif;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .camera-list
+    {
+        font-family: 'Allerta Stencil', sans-serif;
+        font-size: 14px;
+        list-style-type: none;
+        /* background: violet; */
+        width: 60%;
+        margin: 150px 20%;
+    }
 }
