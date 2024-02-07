@@ -688,8 +688,8 @@ img
             <div class="bnav-bar">
                 <div class="bnav">
                     <a href="/">Home</a>
-                    <a href="{{ route('login') }}">Secret</a>
-                    <a href="">My projects</a>
+                    <a href="/milap">Secret</a>
+                    <a href="https://forms.gle/kiDWfUruyA4aa5dH6">My projects</a>
                     <a href="/buy">Buy me a camera</a>
                 </div>
             </div>

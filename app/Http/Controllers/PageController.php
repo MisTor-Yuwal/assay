@@ -15,6 +15,14 @@ class PageController extends Controller
     {
         return view('buymeacamera');
     }
+    public function secret()
+    {
+        return view('secret');
+    }
+    public function milap()
+    {
+        return view('vid');
+    }
     // public function secret()
     // {
     //     return view('home');

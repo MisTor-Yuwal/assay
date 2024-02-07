@@ -25,6 +25,8 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get('/',[PageController::class,'main']);
 Route::get("/buy",[PageController::class,'buy']);
+Route::get("/secret",[PageController::class,'secret']);
+Route::get("/milap",[PageController::class,'milap']);
 // Route::get("/secret",[PageController::class,'secret']);
 // Auth::routes();
 
